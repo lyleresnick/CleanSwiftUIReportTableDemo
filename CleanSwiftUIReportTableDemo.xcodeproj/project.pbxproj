@@ -1,0 +1,655 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6461061BC1EA14D5DDB5362D /* Pods_CleanSwiftUIReportTableDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1210E9BB7D697740A7E9ED3F /* Pods_CleanSwiftUIReportTableDemo.framework */; };
+		B3E6998F259993B1003403F0 /* TransactionListPresenterProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E6998E259993B1003403F0 /* TransactionListPresenterProxy.swift */; };
+		B3FBA1042597B057002ABB73 /* CleanSwiftUIReportTableDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FBA1032597B057002ABB73 /* CleanSwiftUIReportTableDemoApp.swift */; };
+		B3FBA1062597B057002ABB73 /* TransactionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FBA1052597B057002ABB73 /* TransactionListView.swift */; };
+		B3FBA10B2597B059002ABB73 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3FBA10A2597B059002ABB73 /* Preview Assets.xcassets */; };
+		B3FBA1452597CEE9002ABB73 /* NetworkedTransactionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FBA13A2597CEE9002ABB73 /* NetworkedTransactionManager.swift */; };
+		B3FBA1462597CEE9002ABB73 /* TestTransactionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FBA13B2597CEE9002ABB73 /* TestTransactionManager.swift */; };
+		B3FBA1472597CEE9002ABB73 /* TransactionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FBA13C2597CEE9002ABB73 /* TransactionManager.swift */; };
+		B3FBA1482597CEE9002ABB73 /* NetworkedTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FBA13E2597CEE9002ABB73 /* NetworkedTransaction.swift */; };
+		B3FBA1492597CEE9002ABB73 /* Transaction+NetworkedTransaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FBA13F2597CEE9002ABB73 /* Transaction+NetworkedTransaction.swift */; };
+		B3FBA14A2597CEE9002ABB73 /* NetworkedEntityGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FBA1412597CEE9002ABB73 /* NetworkedEntityGateway.swift */; };
+		B3FBA14B2597CEE9002ABB73 /* TestEntityGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FBA1422597CEE9002ABB73 /* TestEntityGateway.swift */; };
+		B3FBA14C2597CEE9002ABB73 /* EntityGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FBA1432597CEE9002ABB73 /* EntityGateway.swift */; };
+		B3FBA14D2597CEE9002ABB73 /* EntityGatewayFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FBA1442597CEE9002ABB73 /* EntityGatewayFactory.swift */; };
+		B3FBA1542597CEEF002ABB73 /* TransactionGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FBA1522597CEEF002ABB73 /* TransactionGroup.swift */; };
+		B3FBA1552597CEEF002ABB73 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FBA1532597CEEF002ABB73 /* Transaction.swift */; };
+		B3FBA17C2597CF63002ABB73 /* TransactionListPresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FBA15C2597CF63002ABB73 /* TransactionListPresenterInput.swift */; };
+		B3FBA17D2597CF63002ABB73 /* TransactionListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FBA15D2597CF63002ABB73 /* TransactionListPresenter.swift */; };
+		B3FBA17E2597CF63002ABB73 /* TransactionListRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FBA15E2597CF63002ABB73 /* TransactionListRowViewModel.swift */; };
+		B3FBA17F2597CF63002ABB73 /* TransactionListRefreshPresenterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FBA15F2597CF63002ABB73 /* TransactionListRefreshPresenterOutput.swift */; };
+		B3FBA1802597CF63002ABB73 /* TransactionListPresenterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FBA1602597CF63002ABB73 /* TransactionListPresenterOutput.swift */; };
+		B3FBA1812597CF63002ABB73 /* TransactionListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FBA1622597CF63002ABB73 /* TransactionListAssembly.swift */; };
+		B3FBA1822597CF63002ABB73 /* TransactionListHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FBA1652597CF63002ABB73 /* TransactionListHeaderCell.swift */; };
+		B3FBA1832597CF63002ABB73 /* TransactionListGrandFooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FBA1662597CF63002ABB73 /* TransactionListGrandFooterCell.swift */; };
+		B3FBA1842597CF63002ABB73 /* TransactionListSubfooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FBA1672597CF63002ABB73 /* TransactionListSubfooterCell.swift */; };
+		B3FBA1852597CF63002ABB73 /* TransactionListDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FBA1682597CF63002ABB73 /* TransactionListDetailCell.swift */; };
+		B3FBA1862597CF63002ABB73 /* TransactionListSubheaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FBA1692597CF63002ABB73 /* TransactionListSubheaderCell.swift */; };
+		B3FBA1872597CF63002ABB73 /* TransactionListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FBA16A2597CF63002ABB73 /* TransactionListCell.swift */; };
+		B3FBA1882597CF63002ABB73 /* TransactionListFooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FBA16B2597CF63002ABB73 /* TransactionListFooterCell.swift */; };
+		B3FBA1892597CF63002ABB73 /* TransactionListMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FBA16C2597CF63002ABB73 /* TransactionListMessageCell.swift */; };
+		B3FBA18C2597CF63002ABB73 /* TransactionListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FBA1702597CF63002ABB73 /* TransactionListUseCase.swift */; };
+		B3FBA18D2597CF63002ABB73 /* TransactionListUseCaseTransformer+RefreshTwoSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FBA1712597CF63002ABB73 /* TransactionListUseCaseTransformer+RefreshTwoSource.swift */; };
+		B3FBA18E2597CF63002ABB73 /* TransactionListUseCaseTransformer+RefreshOneSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FBA1722597CF63002ABB73 /* TransactionListUseCaseTransformer+RefreshOneSource.swift */; };
+		B3FBA18F2597CF63002ABB73 /* TransactionListRefreshUseCaseOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FBA1732597CF63002ABB73 /* TransactionListRefreshUseCaseOutput.swift */; };
+		B3FBA1902597CF63002ABB73 /* TransactionListUseCaseInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FBA1742597CF63002ABB73 /* TransactionListUseCaseInput.swift */; };
+		B3FBA1912597CF63002ABB73 /* TransactionListUseCaseOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FBA1752597CF63002ABB73 /* TransactionListUseCaseOutput.swift */; };
+		B3FBA1932597CF63002ABB73 /* DateFormatter+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FBA1782597CF63002ABB73 /* DateFormatter+Format.swift */; };
+		B3FBA1942597CF63002ABB73 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FBA1792597CF63002ABB73 /* Color.swift */; };
+		B3FBA1952597CF63002ABB73 /* SpinnerAttachable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FBA17A2597CF63002ABB73 /* SpinnerAttachable.swift */; };
+		B3FBA19F2597D0C2002ABB73 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B3FBA19E2597D0C2002ABB73 /* Podfile */; };
+		B3FBA1A22597D0C9002ABB73 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B3FBA1A12597D0C9002ABB73 /* README.md */; };
+		B3FBA1AD2597D2E2002ABB73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3FBA1AC2597D2E2002ABB73 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F6588AF82428C65F2C148A5 /* Pods-CleanSwiftUIReportTableDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanSwiftUIReportTableDemo.release.xcconfig"; path = "Target Support Files/Pods-CleanSwiftUIReportTableDemo/Pods-CleanSwiftUIReportTableDemo.release.xcconfig"; sourceTree = "<group>"; };
+		1210E9BB7D697740A7E9ED3F /* Pods_CleanSwiftUIReportTableDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleanSwiftUIReportTableDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5682622A1DBD5FAB4F1D228B /* Pods-CleanSwiftUIReportTableDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanSwiftUIReportTableDemo.debug.xcconfig"; path = "Target Support Files/Pods-CleanSwiftUIReportTableDemo/Pods-CleanSwiftUIReportTableDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		B3E6998E259993B1003403F0 /* TransactionListPresenterProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionListPresenterProxy.swift; sourceTree = "<group>"; };
+		B3FBA1002597B057002ABB73 /* CleanSwiftUIReportTableDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanSwiftUIReportTableDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3FBA1032597B057002ABB73 /* CleanSwiftUIReportTableDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanSwiftUIReportTableDemoApp.swift; sourceTree = "<group>"; };
+		B3FBA1052597B057002ABB73 /* TransactionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListView.swift; sourceTree = "<group>"; };
+		B3FBA10A2597B059002ABB73 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B3FBA10C2597B059002ABB73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3FBA13A2597CEE9002ABB73 /* NetworkedTransactionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkedTransactionManager.swift; sourceTree = "<group>"; };
+		B3FBA13B2597CEE9002ABB73 /* TestTransactionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTransactionManager.swift; sourceTree = "<group>"; };
+		B3FBA13C2597CEE9002ABB73 /* TransactionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionManager.swift; sourceTree = "<group>"; };
+		B3FBA13E2597CEE9002ABB73 /* NetworkedTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkedTransaction.swift; sourceTree = "<group>"; };
+		B3FBA13F2597CEE9002ABB73 /* Transaction+NetworkedTransaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Transaction+NetworkedTransaction.swift"; sourceTree = "<group>"; };
+		B3FBA1412597CEE9002ABB73 /* NetworkedEntityGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkedEntityGateway.swift; sourceTree = "<group>"; };
+		B3FBA1422597CEE9002ABB73 /* TestEntityGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestEntityGateway.swift; sourceTree = "<group>"; };
+		B3FBA1432597CEE9002ABB73 /* EntityGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityGateway.swift; sourceTree = "<group>"; };
+		B3FBA1442597CEE9002ABB73 /* EntityGatewayFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityGatewayFactory.swift; sourceTree = "<group>"; };
+		B3FBA1522597CEEF002ABB73 /* TransactionGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionGroup.swift; sourceTree = "<group>"; };
+		B3FBA1532597CEEF002ABB73 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		B3FBA15C2597CF63002ABB73 /* TransactionListPresenterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionListPresenterInput.swift; sourceTree = "<group>"; };
+		B3FBA15D2597CF63002ABB73 /* TransactionListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionListPresenter.swift; sourceTree = "<group>"; };
+		B3FBA15E2597CF63002ABB73 /* TransactionListRowViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionListRowViewModel.swift; sourceTree = "<group>"; };
+		B3FBA15F2597CF63002ABB73 /* TransactionListRefreshPresenterOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionListRefreshPresenterOutput.swift; sourceTree = "<group>"; };
+		B3FBA1602597CF63002ABB73 /* TransactionListPresenterOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionListPresenterOutput.swift; sourceTree = "<group>"; };
+		B3FBA1622597CF63002ABB73 /* TransactionListAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionListAssembly.swift; sourceTree = "<group>"; };
+		B3FBA1652597CF63002ABB73 /* TransactionListHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionListHeaderCell.swift; sourceTree = "<group>"; };
+		B3FBA1662597CF63002ABB73 /* TransactionListGrandFooterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionListGrandFooterCell.swift; sourceTree = "<group>"; };
+		B3FBA1672597CF63002ABB73 /* TransactionListSubfooterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionListSubfooterCell.swift; sourceTree = "<group>"; };
+		B3FBA1682597CF63002ABB73 /* TransactionListDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionListDetailCell.swift; sourceTree = "<group>"; };
+		B3FBA1692597CF63002ABB73 /* TransactionListSubheaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionListSubheaderCell.swift; sourceTree = "<group>"; };
+		B3FBA16A2597CF63002ABB73 /* TransactionListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionListCell.swift; sourceTree = "<group>"; };
+		B3FBA16B2597CF63002ABB73 /* TransactionListFooterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionListFooterCell.swift; sourceTree = "<group>"; };
+		B3FBA16C2597CF63002ABB73 /* TransactionListMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionListMessageCell.swift; sourceTree = "<group>"; };
+		B3FBA1702597CF63002ABB73 /* TransactionListUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionListUseCase.swift; sourceTree = "<group>"; };
+		B3FBA1712597CF63002ABB73 /* TransactionListUseCaseTransformer+RefreshTwoSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TransactionListUseCaseTransformer+RefreshTwoSource.swift"; sourceTree = "<group>"; };
+		B3FBA1722597CF63002ABB73 /* TransactionListUseCaseTransformer+RefreshOneSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TransactionListUseCaseTransformer+RefreshOneSource.swift"; sourceTree = "<group>"; };
+		B3FBA1732597CF63002ABB73 /* TransactionListRefreshUseCaseOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionListRefreshUseCaseOutput.swift; sourceTree = "<group>"; };
+		B3FBA1742597CF63002ABB73 /* TransactionListUseCaseInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionListUseCaseInput.swift; sourceTree = "<group>"; };
+		B3FBA1752597CF63002ABB73 /* TransactionListUseCaseOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionListUseCaseOutput.swift; sourceTree = "<group>"; };
+		B3FBA1782597CF63002ABB73 /* DateFormatter+Format.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Format.swift"; sourceTree = "<group>"; };
+		B3FBA1792597CF63002ABB73 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		B3FBA17A2597CF63002ABB73 /* SpinnerAttachable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinnerAttachable.swift; sourceTree = "<group>"; };
+		B3FBA19E2597D0C2002ABB73 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		B3FBA1A12597D0C9002ABB73 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B3FBA1AC2597D2E2002ABB73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3FBA0FD2597B057002ABB73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6461061BC1EA14D5DDB5362D /* Pods_CleanSwiftUIReportTableDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B3FBA0F72597B057002ABB73 = {
+			isa = PBXGroup;
+			children = (
+				B3FBA19E2597D0C2002ABB73 /* Podfile */,
+				B3FBA1A12597D0C9002ABB73 /* README.md */,
+				B3FBA1022597B057002ABB73 /* CleanSwiftUIReportTableDemo */,
+				B3FBA1012597B057002ABB73 /* Products */,
+				F28A5532AB31CE96C5BEC797 /* Pods */,
+				B527DF6B3F507278EB0D4977 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B3FBA1012597B057002ABB73 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3FBA1002597B057002ABB73 /* CleanSwiftUIReportTableDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3FBA1022597B057002ABB73 /* CleanSwiftUIReportTableDemo */ = {
+			isa = PBXGroup;
+			children = (
+				B3FBA1512597CEEF002ABB73 /* Entities */,
+				B3FBA1382597CEE9002ABB73 /* DataAccess */,
+				B3FBA1032597B057002ABB73 /* CleanSwiftUIReportTableDemoApp.swift */,
+				B3FBA10C2597B059002ABB73 /* Info.plist */,
+				B3FBA1592597CF63002ABB73 /* Scenes */,
+				B3FBA1092597B059002ABB73 /* Preview Content */,
+			);
+			path = CleanSwiftUIReportTableDemo;
+			sourceTree = "<group>";
+		};
+		B3FBA1092597B059002ABB73 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B3FBA10A2597B059002ABB73 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B3FBA1382597CEE9002ABB73 /* DataAccess */ = {
+			isa = PBXGroup;
+			children = (
+				B3FBA1392597CEE9002ABB73 /* Managers */,
+				B3FBA13D2597CEE9002ABB73 /* Networked */,
+				B3FBA1402597CEE9002ABB73 /* EntityGateway */,
+			);
+			path = DataAccess;
+			sourceTree = "<group>";
+		};
+		B3FBA1392597CEE9002ABB73 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				B3FBA13A2597CEE9002ABB73 /* NetworkedTransactionManager.swift */,
+				B3FBA13B2597CEE9002ABB73 /* TestTransactionManager.swift */,
+				B3FBA13C2597CEE9002ABB73 /* TransactionManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		B3FBA13D2597CEE9002ABB73 /* Networked */ = {
+			isa = PBXGroup;
+			children = (
+				B3FBA13E2597CEE9002ABB73 /* NetworkedTransaction.swift */,
+				B3FBA13F2597CEE9002ABB73 /* Transaction+NetworkedTransaction.swift */,
+			);
+			path = Networked;
+			sourceTree = "<group>";
+		};
+		B3FBA1402597CEE9002ABB73 /* EntityGateway */ = {
+			isa = PBXGroup;
+			children = (
+				B3FBA1412597CEE9002ABB73 /* NetworkedEntityGateway.swift */,
+				B3FBA1422597CEE9002ABB73 /* TestEntityGateway.swift */,
+				B3FBA1432597CEE9002ABB73 /* EntityGateway.swift */,
+				B3FBA1442597CEE9002ABB73 /* EntityGatewayFactory.swift */,
+			);
+			path = EntityGateway;
+			sourceTree = "<group>";
+		};
+		B3FBA1512597CEEF002ABB73 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				B3FBA1522597CEEF002ABB73 /* TransactionGroup.swift */,
+				B3FBA1532597CEEF002ABB73 /* Transaction.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		B3FBA1592597CF63002ABB73 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				B3FBA1AC2597D2E2002ABB73 /* Assets.xcassets */,
+				B3FBA15A2597CF63002ABB73 /* AccountDetailsTransactionList */,
+				B3FBA1772597CF63002ABB73 /* Shared */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		B3FBA15A2597CF63002ABB73 /* AccountDetailsTransactionList */ = {
+			isa = PBXGroup;
+			children = (
+				B3FBA1612597CF63002ABB73 /* Assembly */,
+				B3FBA15B2597CF63002ABB73 /* Presenter */,
+				B3FBA1632597CF63002ABB73 /* View */,
+				B3FBA16F2597CF63002ABB73 /* UseCase */,
+			);
+			path = AccountDetailsTransactionList;
+			sourceTree = "<group>";
+		};
+		B3FBA15B2597CF63002ABB73 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B3E6998E259993B1003403F0 /* TransactionListPresenterProxy.swift */,
+				B3FBA15C2597CF63002ABB73 /* TransactionListPresenterInput.swift */,
+				B3FBA15D2597CF63002ABB73 /* TransactionListPresenter.swift */,
+				B3FBA15E2597CF63002ABB73 /* TransactionListRowViewModel.swift */,
+				B3FBA15F2597CF63002ABB73 /* TransactionListRefreshPresenterOutput.swift */,
+				B3FBA1602597CF63002ABB73 /* TransactionListPresenterOutput.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		B3FBA1612597CF63002ABB73 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				B3FBA1622597CF63002ABB73 /* TransactionListAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		B3FBA1632597CF63002ABB73 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B3FBA1052597B057002ABB73 /* TransactionListView.swift */,
+				B3FBA1642597CF63002ABB73 /* Cells */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B3FBA1642597CF63002ABB73 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B3FBA1652597CF63002ABB73 /* TransactionListHeaderCell.swift */,
+				B3FBA1662597CF63002ABB73 /* TransactionListGrandFooterCell.swift */,
+				B3FBA1672597CF63002ABB73 /* TransactionListSubfooterCell.swift */,
+				B3FBA1682597CF63002ABB73 /* TransactionListDetailCell.swift */,
+				B3FBA1692597CF63002ABB73 /* TransactionListSubheaderCell.swift */,
+				B3FBA16A2597CF63002ABB73 /* TransactionListCell.swift */,
+				B3FBA16B2597CF63002ABB73 /* TransactionListFooterCell.swift */,
+				B3FBA16C2597CF63002ABB73 /* TransactionListMessageCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B3FBA16F2597CF63002ABB73 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				B3FBA1702597CF63002ABB73 /* TransactionListUseCase.swift */,
+				B3FBA1712597CF63002ABB73 /* TransactionListUseCaseTransformer+RefreshTwoSource.swift */,
+				B3FBA1722597CF63002ABB73 /* TransactionListUseCaseTransformer+RefreshOneSource.swift */,
+				B3FBA1732597CF63002ABB73 /* TransactionListRefreshUseCaseOutput.swift */,
+				B3FBA1742597CF63002ABB73 /* TransactionListUseCaseInput.swift */,
+				B3FBA1752597CF63002ABB73 /* TransactionListUseCaseOutput.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		B3FBA1772597CF63002ABB73 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				B3FBA1782597CF63002ABB73 /* DateFormatter+Format.swift */,
+				B3FBA1792597CF63002ABB73 /* Color.swift */,
+				B3FBA17A2597CF63002ABB73 /* SpinnerAttachable.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		B527DF6B3F507278EB0D4977 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1210E9BB7D697740A7E9ED3F /* Pods_CleanSwiftUIReportTableDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F28A5532AB31CE96C5BEC797 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5682622A1DBD5FAB4F1D228B /* Pods-CleanSwiftUIReportTableDemo.debug.xcconfig */,
+				0F6588AF82428C65F2C148A5 /* Pods-CleanSwiftUIReportTableDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B3FBA0FF2597B057002ABB73 /* CleanSwiftUIReportTableDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3FBA1252597B059002ABB73 /* Build configuration list for PBXNativeTarget "CleanSwiftUIReportTableDemo" */;
+			buildPhases = (
+				C93CC7DF2FBCBD8D2ADF7529 /* [CP] Check Pods Manifest.lock */,
+				B3FBA0FC2597B057002ABB73 /* Sources */,
+				B3FBA0FD2597B057002ABB73 /* Frameworks */,
+				B3FBA0FE2597B057002ABB73 /* Resources */,
+				F4276477977D48A9D5ACD818 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CleanSwiftUIReportTableDemo;
+			productName = CleanSwiftUIReportTableDemo;
+			productReference = B3FBA1002597B057002ABB73 /* CleanSwiftUIReportTableDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3FBA0F82597B057002ABB73 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					B3FBA0FF2597B057002ABB73 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = B3FBA0FB2597B057002ABB73 /* Build configuration list for PBXProject "CleanSwiftUIReportTableDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B3FBA0F72597B057002ABB73;
+			productRefGroup = B3FBA1012597B057002ABB73 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3FBA0FF2597B057002ABB73 /* CleanSwiftUIReportTableDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3FBA0FE2597B057002ABB73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3FBA10B2597B059002ABB73 /* Preview Assets.xcassets in Resources */,
+				B3FBA1A22597D0C9002ABB73 /* README.md in Resources */,
+				B3FBA1AD2597D2E2002ABB73 /* Assets.xcassets in Resources */,
+				B3FBA19F2597D0C2002ABB73 /* Podfile in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C93CC7DF2FBCBD8D2ADF7529 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CleanSwiftUIReportTableDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4276477977D48A9D5ACD818 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CleanSwiftUIReportTableDemo/Pods-CleanSwiftUIReportTableDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CleanSwiftUIReportTableDemo/Pods-CleanSwiftUIReportTableDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CleanSwiftUIReportTableDemo/Pods-CleanSwiftUIReportTableDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3FBA0FC2597B057002ABB73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3FBA18C2597CF63002ABB73 /* TransactionListUseCase.swift in Sources */,
+				B3FBA17D2597CF63002ABB73 /* TransactionListPresenter.swift in Sources */,
+				B3FBA1892597CF63002ABB73 /* TransactionListMessageCell.swift in Sources */,
+				B3FBA1932597CF63002ABB73 /* DateFormatter+Format.swift in Sources */,
+				B3FBA1462597CEE9002ABB73 /* TestTransactionManager.swift in Sources */,
+				B3FBA1862597CF63002ABB73 /* TransactionListSubheaderCell.swift in Sources */,
+				B3FBA14A2597CEE9002ABB73 /* NetworkedEntityGateway.swift in Sources */,
+				B3FBA18D2597CF63002ABB73 /* TransactionListUseCaseTransformer+RefreshTwoSource.swift in Sources */,
+				B3FBA1492597CEE9002ABB73 /* Transaction+NetworkedTransaction.swift in Sources */,
+				B3FBA14C2597CEE9002ABB73 /* EntityGateway.swift in Sources */,
+				B3FBA1942597CF63002ABB73 /* Color.swift in Sources */,
+				B3FBA1902597CF63002ABB73 /* TransactionListUseCaseInput.swift in Sources */,
+				B3FBA1542597CEEF002ABB73 /* TransactionGroup.swift in Sources */,
+				B3FBA17E2597CF63002ABB73 /* TransactionListRowViewModel.swift in Sources */,
+				B3FBA1552597CEEF002ABB73 /* Transaction.swift in Sources */,
+				B3FBA1842597CF63002ABB73 /* TransactionListSubfooterCell.swift in Sources */,
+				B3FBA1852597CF63002ABB73 /* TransactionListDetailCell.swift in Sources */,
+				B3FBA1452597CEE9002ABB73 /* NetworkedTransactionManager.swift in Sources */,
+				B3FBA1832597CF63002ABB73 /* TransactionListGrandFooterCell.swift in Sources */,
+				B3FBA1882597CF63002ABB73 /* TransactionListFooterCell.swift in Sources */,
+				B3FBA1812597CF63002ABB73 /* TransactionListAssembly.swift in Sources */,
+				B3FBA1482597CEE9002ABB73 /* NetworkedTransaction.swift in Sources */,
+				B3FBA1912597CF63002ABB73 /* TransactionListUseCaseOutput.swift in Sources */,
+				B3FBA1062597B057002ABB73 /* TransactionListView.swift in Sources */,
+				B3FBA1042597B057002ABB73 /* CleanSwiftUIReportTableDemoApp.swift in Sources */,
+				B3FBA1822597CF63002ABB73 /* TransactionListHeaderCell.swift in Sources */,
+				B3FBA17C2597CF63002ABB73 /* TransactionListPresenterInput.swift in Sources */,
+				B3FBA17F2597CF63002ABB73 /* TransactionListRefreshPresenterOutput.swift in Sources */,
+				B3FBA1952597CF63002ABB73 /* SpinnerAttachable.swift in Sources */,
+				B3FBA14B2597CEE9002ABB73 /* TestEntityGateway.swift in Sources */,
+				B3FBA1872597CF63002ABB73 /* TransactionListCell.swift in Sources */,
+				B3FBA1472597CEE9002ABB73 /* TransactionManager.swift in Sources */,
+				B3FBA1802597CF63002ABB73 /* TransactionListPresenterOutput.swift in Sources */,
+				B3FBA18F2597CF63002ABB73 /* TransactionListRefreshUseCaseOutput.swift in Sources */,
+				B3FBA18E2597CF63002ABB73 /* TransactionListUseCaseTransformer+RefreshOneSource.swift in Sources */,
+				B3FBA14D2597CEE9002ABB73 /* EntityGatewayFactory.swift in Sources */,
+				B3E6998F259993B1003403F0 /* TransactionListPresenterProxy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B3FBA1232597B059002ABB73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B3FBA1242597B059002ABB73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B3FBA1262597B059002ABB73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5682622A1DBD5FAB4F1D228B /* Pods-CleanSwiftUIReportTableDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CleanSwiftUIReportTableDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = JTC7H5GCJ5;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CleanSwiftUIReportTableDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cellarpoint.CleanSwiftUIReportTableDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B3FBA1272597B059002ABB73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F6588AF82428C65F2C148A5 /* Pods-CleanSwiftUIReportTableDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CleanSwiftUIReportTableDemo/Preview Content\"";
+				DEVELOPMENT_TEAM = JTC7H5GCJ5;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CleanSwiftUIReportTableDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cellarpoint.CleanSwiftUIReportTableDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3FBA0FB2597B057002ABB73 /* Build configuration list for PBXProject "CleanSwiftUIReportTableDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3FBA1232597B059002ABB73 /* Debug */,
+				B3FBA1242597B059002ABB73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3FBA1252597B059002ABB73 /* Build configuration list for PBXNativeTarget "CleanSwiftUIReportTableDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3FBA1262597B059002ABB73 /* Debug */,
+				B3FBA1272597B059002ABB73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B3FBA0F82597B057002ABB73 /* Project object */;
+}
