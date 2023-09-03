@@ -27,3 +27,9 @@ struct TransactionListFooterCell: View, TransactionListCell {
         }
     }
 }
+
+struct TransactionListFooterCell_preview: PreviewProvider {
+    static var previews: some View {
+        TransactionListFooterCell(row: .footer(total: "100.00", odd: false))
+    }
+}
