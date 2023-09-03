@@ -25,3 +25,9 @@ struct TransactionListHeaderCell: View, TransactionListCell {
 
     }
 }
+
+struct TransactionListHeaderCell_preview: PreviewProvider {
+    static var previews: some View {
+        TransactionListHeaderCell(row: .header(title: "hello"))
+    }
+}

@@ -8,7 +8,7 @@ enum  TransactionError: Error {
 }
 
 
-protocol TransactionManager: class {
+protocol TransactionManager: AnyObject {
     
     func fetchAuthorizedTransactions() -> AnyPublisher<[Transaction], TransactionError>
     func fetchPostedTransactions() -> AnyPublisher<[Transaction], TransactionError>

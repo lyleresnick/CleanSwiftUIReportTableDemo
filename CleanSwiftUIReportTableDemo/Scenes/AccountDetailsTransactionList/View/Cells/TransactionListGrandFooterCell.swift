@@ -30,3 +30,9 @@ struct TransactionListGrandFooterCell: View, TransactionListCell {
 
     }
 }
+
+struct TransactionListGrandFooterCell_preview: PreviewProvider {
+    static var previews: some View {
+        TransactionListGrandFooterCell(row: .grandfooter(total: "100.00"))
+    }
+}

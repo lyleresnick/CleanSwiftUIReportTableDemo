@@ -23,3 +23,10 @@ struct TransactionListMessageCell: View, TransactionListCell {
         }
     }
 }
+
+struct TransactionListMessageCell_preview: PreviewProvider {
+    static var previews: some View {
+        TransactionListMessageCell(row: .message(message: "This is a message"))
+    }
+}
+
