@@ -23,29 +23,34 @@ struct TransactionListSceneView: View {
                 }
                 else if case let .showReport(viewModel) = proxy.output {
                     ScrollView {
-                        ForEach(viewModel, id: \.self) { row in
-                            switch row {
-                            case .header:
-                                TransactionListHeaderCell(row: row)
-                            case .subheader:
-                                TransactionListSubheaderCell(row: row)
-                            case  .detail:
-                                TransactionListDetailCell(row: row)
-                            case .message:
-                                TransactionListMessageCell(row: row)
-                            case .footer:
-                                TransactionListFooterCell(row: row)
-                            case .grandfooter:
-                                TransactionListGrandFooterCell(row: row)
-                            case .subfooter:
-                                TransactionListSubfooterCell(row: row)
+                        VStack(spacing: 0) {
+                            ForEach(viewModel, id: \.self) { row in
+                                switch row {
+                                case .header:
+                                    TransactionListHeaderCell(row: row)
+                                case .subheader:
+                                    TransactionListSubheaderCell(row: row)
+                                case  .detail:
+                                    TransactionListDetailCell(row: row)
+                                case .message:
+                                    TransactionListMessageCell(row: row)
+                                case .footer:
+                                    TransactionListFooterCell(row: row)
+                                case .grandfooter:
+                                    TransactionListGrandFooterCell(row: row)
+                                case .subfooter:
+                                    TransactionListSubfooterCell(row: row)
+                                }
                             }
                         }
                     }
+//                    .listRowSeparator(.hidden)
+//                    .listStyle(PlainListStyle())
                 }
 
             }.navigationTitle(Text("Transactions"))
         }
+
     }
 }
 

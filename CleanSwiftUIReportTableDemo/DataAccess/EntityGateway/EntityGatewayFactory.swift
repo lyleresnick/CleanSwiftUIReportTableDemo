@@ -9,7 +9,7 @@ class EntityGatewayFactory {
         case networked
     }
 
-    static var gatewayImplementation = Implementation.networked
+    static var gatewayImplementation = Implementation.test
     
     static var gateway: EntityGateway = {
 

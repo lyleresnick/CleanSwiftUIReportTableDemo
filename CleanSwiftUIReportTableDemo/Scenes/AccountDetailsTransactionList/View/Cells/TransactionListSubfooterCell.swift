@@ -21,3 +21,10 @@ struct TransactionListSubfooterCell: View, TransactionListCell {
         }
     }
 }
+
+
+struct TransactionListSubfooterCell_preview: PreviewProvider {
+    static var previews: some View {
+        TransactionListSubfooterCell(row: .subfooter(odd: false))
+    }
+}

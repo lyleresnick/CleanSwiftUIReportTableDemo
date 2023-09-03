@@ -23,3 +23,9 @@ struct TransactionListSubheaderCell: View, TransactionListCell {
         }
     }
 }
+
+struct TransactionListSubheaderCell_preview: PreviewProvider {
+    static var previews: some View {
+        TransactionListSubheaderCell(row: .subheader(title: "This is a sub header", odd: false))
+    }
+}

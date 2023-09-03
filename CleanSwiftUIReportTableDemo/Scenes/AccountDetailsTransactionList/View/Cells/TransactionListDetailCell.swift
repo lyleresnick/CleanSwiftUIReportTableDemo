@@ -28,3 +28,9 @@ struct TransactionListDetailCell: View, TransactionListCell {
     }
 }
 
+struct TransactionListDetailCell_preview: PreviewProvider {
+    static var previews: some View {
+        TransactionListDetailCell(row: .detail(description: "Thing i bought", amount: "100.00", odd: false))
+    }
+}
+
